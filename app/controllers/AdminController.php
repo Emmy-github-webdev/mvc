@@ -5,6 +5,8 @@ class AdminController extends Dcontroller{
     public function __construct(){
         parent::__construct();
         Session::checkSession();
+        If(!$this->session->userdata("id"))
+          return redirect("LoginController/login");
     }
 
     public function Index(){

@@ -7,6 +7,8 @@ class LoginController extends Dcontroller{
     }
 
     public function Index(){
+        If($this->session->userdata("id"))
+        return redirect("AdminController");
         $this->login();
     }
 
