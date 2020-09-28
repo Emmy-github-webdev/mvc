@@ -4,9 +4,6 @@ class AdminController extends Dcontroller{
 
     public function __construct(){
         parent::__construct();
-        if (Session::get("login") ==  false) {
-            header("Location:".BASE_URL."/LoginController");
-          }
         Session::checkSession();
     }
 

@@ -7,7 +7,6 @@ class LoginController extends Dcontroller{
     }
 
     public function Index(){
-       
         $this->login();
     }
 
