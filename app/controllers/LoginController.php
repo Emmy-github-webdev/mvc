@@ -7,9 +7,6 @@ class LoginController extends Dcontroller{
     }
 
     public function Index(){
-        if (!Session::get("login") ==  true) {
-            header("Location:".BASE_URL."/LoginController");
-          }
        
         $this->login();
     }
